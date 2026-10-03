@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160b12">
+  <meta name="description" content="Un pequeño regalo hecho con mucho cariño.">
+  <title>Para mi persona favorita ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <div class="logo">♡ PARA TI</div>
+      <button class="music-btn" id="musicBtn" type="button" aria-label="Activar música">♫</button>
+    </nav>
+
+    <div class="hero-inner reveal">
+      <p class="eyebrow">UN PEQUEÑO REGALO</p>
+      <h1>Para mi<br><span>persona favorita.</span></h1>
+      <p class="hero-copy">
+        Hice este pequeño rincón de internet pensando solamente en ti.
+        Quédate un ratito y descubre todo lo que preparé. ♡
+      </p>
+      <a class="primary-btn" href="#carta">Abrir el regalo <span>↓</span></a>
+    </div>
+
+    <div class="scroll-hint">DESLIZA ↓</div>
+  </header>
+
+  <main>
+    <section class="section intro" id="carta">
+      <div class="section-number">01</div>
+      <div class="paper reveal">
+        <p class="eyebrow">UNA CARTA PARA TI</p>
+        <h2>¿Sabes cuánto te quiero?</h2>
+        <p>
+          A veces no encuentro las palabras exactas para decirte todo lo que siento,
+          así que decidí hacer algo diferente para demostrártelo.
+        </p>
+        <p>
+          Gracias por estar conmigo, por tus mensajes, tus ocurrencias, tus detalles
+          y por todos esos momentos que terminan convirtiéndose en recuerdos que
+          quiero guardar.
+        </p>
+        <p>
+          No necesito que todo sea perfecto. Solo quiero seguir compartiendo
+          momentos contigo, reírnos, molestarnos, apoyarnos y crear muchas historias
+          más juntos.
+        </p>
+        <p class="signature">Con muchísimo cariño,<br>para ti. ♡</p>
+      </div>
+    </section>
+
+    <section class="section reasons">
+      <div class="section-number">02</div>
+      <div class="content reveal">
+        <p class="eyebrow">PEQUEÑAS COSAS</p>
+        <h2>Razones para sonreír</h2>
+        <div class="cards">
+          <article class="card">
+            <span>♡</span>
+            <h3>Tu forma de ser</h3>
+            <p>Me encanta la persona que eres y esa manera tuya de hacer especial lo cotidiano.</p>
+          </article>
+          <article class="card">
+            <span>✦</span>
+            <h3>Tus detalles</h3>
+            <p>Hasta las cosas más pequeñas que haces pueden cambiarme completamente el día.</p>
+          </article>
+          <article class="card">
+            <span>♥</span>
+            <h3>Simplemente tú</h3>
+            <p>No hace falta una explicación complicada. Me gustas por ser exactamente tú.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memory">
+      <div class="section-number">03</div>
+      <div class="content reveal">
+        <p class="eyebrow">NUESTRO RECUERDO</p>
+        <h2>Un lugar para nuestra foto</h2>
+        <div class="photo-frame">
+          <img id="couplePhoto" src="assets/foto.jpg" alt="Nuestro recuerdo">
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <span>♡</span>
+            <strong>Tu foto va aquí</strong>
+            <small>Reemplaza assets/foto.jpg por una foto de ustedes.</small>
+          </div>
+        </div>
+        <p class="caption">“Si pudiera guardar un momento para siempre, elegiría uno contigo.”</p>
+      </div>
+    </section>
+
+    <section class="section timeline">
+      <div class="section-number">04</div>
+      <div class="content reveal">
+        <p class="eyebrow">NUESTRA HISTORIA</p>
+        <h2>Pequeños momentos</h2>
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div><small>EL COMIENZO</small><h3>El día que todo empezó</h3><p>Escribe aquí cómo se conocieron o el recuerdo que quieras destacar.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div><small>UN RECUERDO</small><h3>Ese momento que no olvido</h3><p>Agrega aquí una anécdota que sea especial para los dos.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div><small>HOY</small><h3>Seguimos escribiendo nuestra historia</h3><p>Porque todavía quedan muchísimos recuerdos por crear.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section counter-section">
+      <div class="section-number">05</div>
+      <div class="content reveal">
+        <p class="eyebrow">DESDE AQUEL DÍA</p>
+        <h2>Tiempo juntos</h2>
+        <p class="counter-sub">Cambia la fecha en <code>script.js</code> por la fecha en que empezaron.</p>
+        <div class="counter" id="counter">
+          <div><strong id="days">0</strong><span>DÍAS</span></div>
+          <div><strong id="hours">0</strong><span>HORAS</span></div>
+          <div><strong id="minutes">0</strong><span>MINUTOS</span></div>
+          <div><strong id="seconds">0</strong><span>SEGUNDOS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final">
+      <div class="content reveal">
+        <p class="eyebrow">UNA ÚLTIMA COSA</p>
+        <h2>¿Abrimos la sorpresa?</h2>
+        <p class="final-copy">
+          Llegaste hasta aquí, así que te guardé un último mensaje.
+        </p>
+        <button class="primary-btn" id="surpriseBtn" type="button">Abrir mi mensaje ♡</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Hecho especialmente para <span>mi persona favorita ♡</span></footer>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="close" id="closeModal" type="button" aria-label="Cerrar">×</button>
+      <div class="modal-heart">♥</div>
+      <p class="eyebrow">PARA TI</p>
+      <h2 id="modalTitle">Te elegiría una y otra vez.</h2>
+      <p>
+        Gracias por formar parte de mi vida, por cada momento, cada risa
+        y cada recuerdo. Espero que cuando vuelvas a ver esta página
+        recuerdes cuánto te quiero. ♡
+      </p>
+      <p class="modal-signature">Con amor, siempre.</p>
+    </div>
+  </div>
+
+  <audio id="music" loop preload="none">
+    <source src="assets/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
